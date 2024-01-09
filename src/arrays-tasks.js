@@ -340,7 +340,7 @@ function calculateBalance(arr) {
  */
 function createChunks(arr, chunkSize) {
   return arr
-    .map(function (_, index) {
+    .map((_, index) => {
       if (index % chunkSize) return [];
       return [arr.slice(index, index + chunkSize)];
     })
